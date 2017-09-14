@@ -1,2 +1,2 @@
-# Junpeng.github.io
+# Home
 Personal homepage and projects demo
