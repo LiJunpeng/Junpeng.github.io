@@ -3,16 +3,17 @@ var app = angular.module("tinyurlApp");
 app.controller("urlController", 
     ["$scope", "$http", "$routeParams", function ($scope, $http, $routeParams) {
     var shortUrl;
+    var serverURL = "ec2-52-43-217-115.us-west-2.compute.amazonaws.com:3000";
 
-    $http.get("/api/v1/urls/" + $routeParams.shortUrl)  // $routeParams = /:shortUrl // "/api/v1/urls/" 不能少最后一个"/"
+    $http.get(serverURL + "/api/v1/urls/" + $routeParams.shortUrl)  // $routeParams = /:shortUrl // "/api/v1/urls/" 不能少最后一个"/"
         .success(function (data) {
             $scope.shortUrl = data.shorUrl;
             $scope.longUrl = data.longUrl;
-            $scope.shortUrlToShow = "http://localhost/" + data.shortUrl;
-            shortUrl = "http://localhost/" + data.shortUrl;
+            $scope.shortUrlToShow = serverURL + data.shortUrl;
+            shortUrl = serverURL + data.shortUrl;
             $scope.getQRCode();
         });
-    $http.get("/api/v1/urls/" + $routeParams.shortUrl + "/totalClicks")
+    $http.get(serverURL + "/api/v1/urls/" + $routeParams.shortUrl + "/totalClicks")
         .success(function (data) {
             $scope.totalClicks = data;
         });
@@ -22,7 +23,7 @@ app.controller("urlController",
     var renderChart = function (chart, infos) {
         $scope[chart + "Data"] = [];
         $scope[chart + "Labels"] = [];
-        $http.get("/api/v1/urls/" + $routeParams.shortUrl + "/" + infos)
+        $http.get(serverURL + "/api/v1/urls/" + $routeParams.shortUrl + "/" + infos)
             .success(function (data) {
                 data.forEach(function (info) {
                     $scope[chart + "Data"].push(info.count);
@@ -40,7 +41,7 @@ app.controller("urlController",
         $scope.lineLabels = [];
         $scope.lineData = [];
         $scope.time = time;
-        $http.get("/api/v1/urls/" + $routeParams.shortUrl + "/" + time)
+        $http.get(serverURL + "/api/v1/urls/" + $routeParams.shortUrl + "/" + time)
             .success(function (data) {
                 data.forEach(function (info) {
 
