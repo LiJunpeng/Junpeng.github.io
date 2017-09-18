@@ -3,11 +3,11 @@ var app = angular.module('tinyurlApp', ['ngRoute', 'ngResource', 'chart.js']); /
 app.config(function ($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl: "./public/views/home.html",
+        templateUrl: "../views/home.html",
         controller: "homeController"
     })
     .when("/urls/:shortUrl", {
-        templateUrl: "./public/views/url.html",
+        templateUrl: "./views/url.html",
         controller: "urlController"
     });
 });
