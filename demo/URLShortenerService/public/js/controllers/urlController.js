@@ -3,7 +3,7 @@ var app = angular.module("tinyurlApp");
 app.controller("urlController", 
     ["$scope", "$http", "$routeParams", function ($scope, $http, $routeParams) {
     var shortUrl;
-    var serverURL = "ec2-52-43-217-115.us-west-2.compute.amazonaws.com:3000";
+    var serverURL = "http://ec2-52-43-217-115.us-west-2.compute.amazonaws.com:3000";
 
     $http.get(serverURL + "/api/v1/urls/" + $routeParams.shortUrl)  // $routeParams = /:shortUrl // "/api/v1/urls/" 不能少最后一个"/"
         .success(function (data) {
