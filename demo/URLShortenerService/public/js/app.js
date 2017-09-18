@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
         controller: "homeController"
     })
     .when("/urls/:shortUrl", {
-        templateUrl: "./views/url.html",
+        templateUrl: "../views/url.html",
         controller: "urlController"
     });
 });
