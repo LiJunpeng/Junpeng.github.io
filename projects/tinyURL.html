@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Junpeng's Demo Space</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style/project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-centered">
+                    <a href="../index.html" style="text-decoration:none;color:black;font-family:'Open Sans'"><h1>Junpeng's Demo Space</h1></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project_container">
+            <div class="title">
+                <h2>URL Shortener Service</h2>
+                <h3>Tweet your long URL</h3>
+                <h4><b>Key words:</b> Node.js, Express, AngularJS, MongoDB, Docker, Redis</h4>
+            </div>
+
+           <div class="content">
+                <p>
+                    Twitter has a character limit on each tweet, which gives me a hard time to share long urls with friends.
+                </p>
+                <image class="image" src="../image/twitterLong.png">
+                 <p>
+                    The URL Shortener Service is the solution! This project is similar to Google URL Shortener or other shortener service. Basically, it takes a long url and return a short one back to user. User can then uses the shorter one to access the original web page that long url points to.
+                </p>
+                <image class="image" src="../image/tiny.png">
+                <p>
+                    I also add statistic functionality that allows user to track how many people click the short url he created, which browser people were using when clicked the short url, etc.
+                </p>
+                <image class="image" src="../image/tinyStatic.png">
+                <p>
+                    The project is designed to be deployed in a dockerized fashion which integrated Redis as cache and Nginx as load balancer, or as a standalone Node.js program. Here is the github link to the project: <a href="https://github.com/LiJunpeng/URLShortenerService" target="_blank">https://github.com/LiJunpeng/URLShortenerService</a>
+                    <br>
+                    I also have a demo deployed on AWS. Try it out!
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="http://urlshortener.kufrmsdmfs.us-west-2.elasticbeanstalk.com/" target="_blank" role="button">Demo &raquo;</a>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="bottom">
+            <hr class="divider">
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/li-junpeng/" target="_blank">
+                    <img src="../image/sn-linkedin.svg">
+                </a>
+                <a href="https://github.com/LiJunpeng" target="_blank">
+                    <img src="../image/sn-github.svg">
+                </a>
+            </div>
+            <div class="copyright">
+                <h5>Copyright @ 2017 Junpeng Li | Demo Space</h5>
+            </div>
+        </div>
+
+
+
+
+<!-- 	    <div class="row col-centered col-xs-12 col-md-12">
+		    <div class="jumbotron project_container">
+		     	<h3>URL Shortener Service</h3>
+		    	<p>This project is similar to Google URL Shortener or other shortener service. Basically, it takes a long url and return a short one back to user. User can then uses the shorter one to access the original web page that long url points to. It's a useful service when posting url in social network like Twitter who has length limit. I also add statistic functionality that allows user to track how many people click the short url he created.</p>
+		        <p>Key words: Node.js, Express, AngularJS, MongoDB, Docker, Redis</p>
+		        <p>
+		          <a class="btn btn-lg btn-primary" href="http://urlshortener.kufrmsdmfs.us-west-2.elasticbeanstalk.com/" target="_blank" role="button">Demo &raquo;</a>
+		        </p>
+		    </div>
+		</div> -->
+
+
+
+    </div>
+
+
+</body>
+</html>

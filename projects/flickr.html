@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Junpeng's Demo Space</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style/project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-centered">
+                    <a href="../index.html" style="text-decoration:none;color:black;font-family:'Open Sans'"><h1>Junpeng's Demo Space</h1></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project_container">
+            <div class="title">
+                <h2>Flickr Gallery</h2>
+                <h3>Enjoy some random photos from Flickr, and relax!</h3>
+                <h4><b>Key words:</b> AngularJS, Bootstrap, NodeJS, Express</h4>
+            </div>
+
+           <div class="content">
+                <p>
+                    "Mini-flickr" is always a good project idea for front-end practice, this is my version of it! 
+                </p>
+                <image class="image" src="../image/flickrMain.png">
+                <p>
+                    I have developed a Node.js server program to deal with the Flickr API and handle topic search. For each search request, the server fetches 100 urls of photos from Flickr and pass them to the front-end. Once received results, front-end loads photos in a 'lazy-load' fashion. There is also a 'filter' for user to search photos with a specific tag.
+                </p>
+                <image class="image" src="../image/flickrFilter.png">
+                <p>
+                    When browsing photos, user can always click the tiny star at the right bottom corner of the photo card to 'pin' it. Only 'pinned' photos will be displayed when user switch from 'All' tab to 'Pinned' tab.
+                </p>
+                <image class="image" src="../image/flickrPin.png">
+                <p>
+                    Here is the github link to the project: <a href="https://github.com/LiJunpeng/flickr_gallery" target="_blank">https://github.com/LiJunpeng/flickr_gallery</a>
+                    <br>
+                    I have a demo deployed on AWS. Try it out!
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="http://miniflickr.kufrmsdmfs.us-west-2.elasticbeanstalk.com/" target="_blank" role="button">Demo &raquo;</a>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="bottom">
+            <hr class="divider">
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/li-junpeng/" target="_blank">
+                    <img src="../image/sn-linkedin.svg">
+                </a>
+                <a href="https://github.com/LiJunpeng" target="_blank">
+                    <img src="../image/sn-github.svg">
+                </a>
+            </div>
+            <div class="copyright">
+                <h5>Copyright @ 2017 Junpeng Li | Demo Space</h5>
+            </div>
+        </div>
+
+
+
+
+<!--         <div class="row col-centered col-xs-12 col-md-12">
+             <div class="jumbotron project_container">
+                <h3>Flickr Gallery</h3>
+                <p>This is a Pinteret-like photo gallery. It utilizes Flickr API and allows user to search for photos in a specific topic.</p>
+                <p>Key words: AngularJS, Bootstrap, NodeJS, Express</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="http://ec2-34-212-239-0.us-west-2.compute.amazonaws.com:3000/" target="_blank" role="button">Demo &raquo;</a>
+                </p>
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+
+</body>
+</html>

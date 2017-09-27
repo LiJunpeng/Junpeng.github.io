@@ -1,61 +1,42 @@
-.body {
-	color: #3c383b;
-}
-
-
 .project_container {
-	display: inline-block;
-	max-width: 1200px;
-	padding:20px;
-	text-align: center;
-}
-
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
-
-
-.project_image {
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	position: relative;
-	background-size: 100%;
-}
-
-.project_wrapper {
-	width: 250px;
-	height: 250px;
-	margin: 20px;
-	display: inline-block;
-	text-align: left;
-}
-
-.project_wrapper p {
-	font-family: sans-serif;
-	line-height: 1.1em;
-	font-size: 14px;
-	margin-top:10px;
-	text-transform: none;
-	text-decoration: none;
-	letter-spacing: 1px;
-	text-align: center;
-	font-weight: 400;
-	font-style: normal;
-	color: #707070;
-}
-
-.project_wrapper h6 {
-	margin-top: 2px;
-	font-size: 12px;
 	display: block;
-	text-align: center;
-	color: #aaaaaa;
+	width:80%;
+	margin:auto;
 }
 
+.title {
+	width: 100%;
+	text-align: center;
+}
 
+.title h3 {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: sans-serif;
+}
 
+.title h4 {
+	font-size: 1.0em;
+	font-weight: normal;
+	font-family: "Open Sans";
+}
+
+.content {
+	text-align: center;
+}
+
+.content p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.image{
+	width: 80%;
+	height: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+}
 
 .divider {
 	margin: 20px;
@@ -111,3 +92,8 @@
 	color: #3c383b;
 	opacity: 0.5;
 }
+
+
+
+
+
